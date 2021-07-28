@@ -17,7 +17,6 @@ app.use(express.json());
 app.post('/pets', (req, res) => {
 
     //es6 syntax destructuring obj
-    // if () {console.log('working')}
     const {name, age, kind} = req.body
     
     const newPet = {
